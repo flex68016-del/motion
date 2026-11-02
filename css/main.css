@@ -803,6 +803,9 @@ html.no-js .silence__rule, html.no-anim .silence__rule { transform: none; }
 .footer-inner nav a { font-size: 0.68rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--color-muted); transition: color 0.4s; }
 .footer-inner nav a:hover { color: var(--color-white); }
 .footer-note { width: 100%; margin-top: 0.6rem; color: rgba(164,154,165,0.65); font-size: 0.75rem; }
+.footer-credit { width: 100%; margin-top: 0.4rem; font-size: 0.7rem; letter-spacing: 0.04em; color: rgba(164,154,165,0.55); }
+.footer-credit a { color: var(--color-muted); transition: color 0.4s; }
+.footer-credit a:hover { color: var(--color-pink); }
 
 /* ---------- 22. Toast ---------- */
 .toast {
