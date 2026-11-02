@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les émotions — SI TU SAVAIS…</title>
+  <meta name="description" content="Amour, regret, nostalgie, gratitude, adieu : cinq univers pour ce que tu n'as jamais dit.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='5' fill='#D6A0AD'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="emotions" data-particle-density="26000">
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="aura" aria-hidden="true"></div>
+  <div class="veil" id="veil" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" data-nav="emotions">SI&nbsp;TU&nbsp;<em>SAVAIS</em>…</a>
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html" data-nav="home">Accueil</a></li>
+        <li><a class="nav-link" href="emotions.html" data-nav="emotions">Émotions</a></li>
+        <li><a class="nav-link" href="ecrire.html" data-nav="ecrire">Écrire</a></li>
+        <li><a class="nav-link" href="mes-messages.html" data-nav="messages">Mes messages</a></li>
+        <li><a class="nav-link" href="a-propos.html" data-nav="about">À propos</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu-overlay" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+  </header>
+  <div class="menu-overlay" id="menu-overlay">
+    <ul class="menu-overlay__list">
+      <li><a class="menu-overlay__link" href="index.html" data-nav="home"><span class="num">01</span>Accueil</a></li>
+      <li><a class="menu-overlay__link" href="emotions.html" data-nav="emotions"><span class="num">02</span>Émotions</a></li>
+      <li><a class="menu-overlay__link" href="ecrire.html" data-nav="ecrire"><span class="num">03</span>Écrire</a></li>
+      <li><a class="menu-overlay__link" href="mes-messages.html" data-nav="messages"><span class="num">04</span>Mes messages</a></li>
+      <li><a class="menu-overlay__link" href="a-propos.html" data-nav="about"><span class="num">05</span>À propos</a></li>
+    </ul>
+    <p class="menu-overlay__foot small-caps">Il y a des choses que le cœur ressent.</p>
+  </div>
+
+  <main id="contenu">
+
+    <section class="emotions-hub-intro shell" aria-label="Les cinq émotions">
+      <div class="eyebrow"><span class="small-caps" data-reveal="fade">Les cinq émotions</span></div>
+      <h1 class="display-xl" data-reveal="lines" style="max-width:14ch">Cinq univers pour ce que tu n'as jamais dit.</h1>
+      <p class="lead" data-reveal="fade" data-reveal-delay="0.3" style="margin-top:2.5rem">
+        Chacun possède sa lumière, son rythme, sa respiration. Choisis celui qui te ressemble aujourd'hui.
+      </p>
+    </section>
+
+    <section class="section shell" aria-label="Choisir une émotion">
+      <div class="emotions-list">
+        <a class="emotion-row" href="emotion-amour.html" style="--row-accent:#D6A0AD;--row-tint:rgba(214,160,173,.09);--rx:20%" data-reveal="fade" data-reveal-delay="0.00">
+          <span class="emotion-row__num">01</span>
+          <span class="emotion-row__body">
+            <span class="emotion-row__name">Amour</span>
+            <span class="emotion-row__quote">Ce que je n'ai jamais osé te dire.</span>
+          </span>
+          <span class="emotion-row__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1"/></svg></span>
+        </a>
+        <a class="emotion-row" href="emotion-regret.html" style="--row-accent:#C4697E;--row-tint:rgba(168,66,88,.10);--rx:70%" data-reveal="fade" data-reveal-delay="0.07">
+          <span class="emotion-row__num">02</span>
+          <span class="emotion-row__body">
+            <span class="emotion-row__name">Regret</span>
+            <span class="emotion-row__quote">Si seulement j'avais trouvé les mots.</span>
+          </span>
+          <span class="emotion-row__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1"/></svg></span>
+        </a>
+        <a class="emotion-row" href="emotion-nostalgie.html" style="--row-accent:#B9AECC;--row-tint:rgba(185,174,204,.09);--rx:35%" data-reveal="fade" data-reveal-delay="0.14">
+          <span class="emotion-row__num">03</span>
+          <span class="emotion-row__body">
+            <span class="emotion-row__name">Nostalgie</span>
+            <span class="emotion-row__quote">Certaines absences ne vieillissent jamais.</span>
+          </span>
+          <span class="emotion-row__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1"/></svg></span>
+        </a>
+        <a class="emotion-row" href="emotion-gratitude.html" style="--row-accent:#E4C99B;--row-tint:rgba(228,201,155,.09);--rx:65%" data-reveal="fade" data-reveal-delay="0.21">
+          <span class="emotion-row__num">04</span>
+          <span class="emotion-row__body">
+            <span class="emotion-row__name">Gratitude</span>
+            <span class="emotion-row__quote">Tu as changé quelque chose en moi.</span>
+          </span>
+          <span class="emotion-row__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1"/></svg></span>
+        </a>
+        <a class="emotion-row" href="emotion-adieu.html" style="--row-accent:#A49AA5;--row-tint:rgba(164,154,165,.08);--rx:45%" data-reveal="fade" data-reveal-delay="0.28">
+          <span class="emotion-row__num">05</span>
+          <span class="emotion-row__body">
+            <span class="emotion-row__name">Adieu</span>
+            <span class="emotion-row__quote">Tout ne peut pas rester.</span>
+          </span>
+          <span class="emotion-row__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-final shell" aria-label="Écrire">
+      <h2 class="verse" data-reveal="words">Ou écris, tout simplement.</h2>
+      <div class="btn-row" data-reveal="fade" data-reveal-delay="0.25">
+        <a class="btn btn--primary" href="ecrire.html">
+          <span class="btn-line">Écrire ce que je ressens</span>
+          <span class="btn-orb" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1"/></svg></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="index.html">SI&nbsp;TU&nbsp;<em>SAVAIS</em>…</a>
+      <nav aria-label="Navigation pied de page">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="emotions.html">Émotions</a></li>
+          <li><a href="ecrire.html">Écrire</a></li>
+          <li><a href="mes-messages.html">Mes messages</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Tes mots restent sur cet appareil. Rien n'est envoyé, rien n'est synchronisé.</p>
+    </div>
+  </footer>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
